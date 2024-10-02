@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sugar Cosmetics</title>
+    <style>
+        .heading {
+            text-align: center;
+        }
+        .main-box {
+            width: 92%;
+            height: auto;
+            
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            padding: 10px;
+            gap: 10px;
+        }
+        .main-box >div {
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+            padding: 10px;
+        }
+        .logo {
+            width: 100%;
+            border-radius: 14px;
+            height: 200px;
+
+        }
+        
+        .coupon-container {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border: 2px dashed #FF0077;
+  background-color: #FFE6F0;
+  border-radius: 8px;
+  width: fit-content;
+  margin-left: 100px;
+}
+
+.coupon-code {
+  font-size: 16px;
+  font-weight: bold;
+  color: #FF0077;
+  margin-right: 10px;
+}
+
+.copy-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-left: 2px dashed #FF0077;
+  padding-left: 10px;
+  cursor: pointer;
+}
+
+.copy-icon svg {
+  stroke: #FF0077;
+}
+@media (min-width:800px) and (max-width:1000px){
+    .main-box {
+            width: 92%;
+            height: auto;
+            
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            padding: 10px;
+            gap: 10px;
+        }
+        .coupon-container {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border: 2px dashed #FF0077;
+  background-color: #FFE6F0;
+  border-radius: 8px;
+  width: fit-content;
+  margin-left: 100px;
+}
+.main-box >div {
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+            padding: 10px;
+           
+        }
+        .logo {
+            width: 100%;
+            border-radius: 14px;
+            height: 200px;
+
+        }
+}
+@media (min-width:450px) and (max-width:800px) {
+    .main-box {
+            width: 90%;
+            height: auto;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            padding: 10px;
+            gap: 10px;
+        }
+        .coupon-container {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border: 2px dashed #FF0077;
+  background-color: #FFE6F0;
+  border-radius: 8px;
+  width: fit-content;
+  margin-left: 150px;
+
+}
+.main-box >div {
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+            padding: 10px;
+           
+        }
+        .logo {
+            width: 100%;
+            border-radius: 14px;
+            height: 200px;
+
+        }
+}
+@media (max-width:500px){
+    .main-box {
+            width: 90%;
+            height: auto;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+            gap: 10px;
+        }
+        .coupon-container {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border: 2px dashed #FF0077;
+  background-color: #FFE6F0;
+  border-radius: 8px;
+  width: fit-content;
+  margin-left: 30%;
+
+}
+.coupon-code {
+  font-size: 16px;
+  font-weight: bold;
+  color: #FF0077;
+  margin-right: 10px;
+}
+
+.copy-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-left: 2px dashed #FF0077;
+  padding-left: 10px;
+  cursor: pointer;
+}
+
+.copy-icon svg {
+  stroke: #FF0077;
+}
+}
+@media (max-width:300px){
+    .main-box {
+            width: 90%;
+            height: auto;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+            gap: 10px;
+        }
+        .coupon-container {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border: 2px dashed #FF0077;
+  background-color: #FFE6F0;
+  border-radius: 8px;
+  width: fit-content;
+  margin-left: 20%;
+
+}
+.coupon-code {
+  font-size: 16px;
+  font-weight: bold;
+  color: #FF0077;
+  margin-right: 10px;
+}
+
+.copy-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-left: 2px dashed #FF0077;
+  padding-left: 10px;
+  cursor: pointer;
+}
+
+.copy-icon svg {
+  stroke: #FF0077;
+}
+}
+
+
+    </style>
+</head>
+<body>
+    <h1 class="heading">
+        <span style="color: rgb(237, 61, 120);">━━━</span>
+        OFFERS
+        <span style="color: rgb(219, 43, 101);">━━━</span></h1>
+    <div class="main-box">
+        <div>
+            <img
+            class="logo"
+            src="https://images.sugarcosmetics.com/Promotion/08fc6f1c-23c2-4d1b-be3e-8b6ca39aedb3.jpg"/>
+            <div class="coupon-container">
+                <span class="coupon-code" id="couponCode">FESTIVE20</span>
+                <div class="copy-icon" onclick="copyToClipboard()">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-copy">
+                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                  </svg>
+                </div>
+              </div>
+              
+              <p id="copyMessage" style="display:none; color:green;">Copied!</p>
+        </div>
+        <div>
+            <img
+            class="logo"
+            src="https://images.sugarcosmetics.com/Promotion/c79454c3-f4d9-4ac4-9aaa-77d1d43b8425.jpg"/>
+            <div class="coupon-container">
+                <span class="coupon-code" id="couponCode">FESTIVE20</span>
+                <div class="copy-icon" onclick="copyToClipboard()">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-copy">
+                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                  </svg>
+                </div>
+              </div>
+              
+              <p id="copyMessage" style="display:none; color:green;">Copied!</p>
+        </div>
+        <div>
+            <img
+            class="logo"
+            src="https://images.sugarcosmetics.com/Promotion/08fc6f1c-23c2-4d1b-be3e-8b6ca39aedb3.jpg"/>
+            <div class="coupon-container">
+                <span class="coupon-code" id="couponCode">FESTIVE20</span>
+                <div class="copy-icon" onclick="copyToClipboard()">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-copy">
+                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                  </svg>
+                </div>
+              </div>
+              
+              <p id="copyMessage" style="display:none; color:green;">Copied!</p>
+        </div>
+        <div>
+            <img
+            class="logo"
+            src="https://images.sugarcosmetics.com/Promotion/c79454c3-f4d9-4ac4-9aaa-77d1d43b8425.jpg"/>
+            <div class="coupon-container">
+                <span class="coupon-code" id="couponCode">FESTIVE20</span>
+                <div class="copy-icon" onclick="copyToClipboard()">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-copy">
+                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                  </svg>
+                </div>
+              </div>
+              
+              <p id="copyMessage" style="display:none; color:green;">Copied!</p>
+        </div>
+        <div>
+            <img
+            class="logo"
+            src="https://images.sugarcosmetics.com/Promotion/08fc6f1c-23c2-4d1b-be3e-8b6ca39aedb3.jpg"/>
+            <div class="coupon-container">
+                <span class="coupon-code" id="couponCode">FESTIVE20</span>
+                <div class="copy-icon" onclick="copyToClipboard()">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-copy">
+                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                  </svg>
+                </div>
+              </div>
+              
+              <p id="copyMessage" style="display:none; color:green;">Copied!</p>
+        </div>
+        <div>
+            <img
+            class="logo"
+            src="https://images.sugarcosmetics.com/Promotion/c79454c3-f4d9-4ac4-9aaa-77d1d43b8425.jpg"/>
+            <div class="coupon-container">
+                <span class="coupon-code" id="couponCode">FESTIVE20</span>
+                <div class="copy-icon" onclick="copyToClipboard()">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-copy">
+                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                  </svg>
+                </div>
+              </div>
+              
+              <p id="copyMessage" style="display:none; color:green;">Copied!</p>
+        </div>
+        <div>
+            <img
+            class="logo"
+            src="https://images.sugarcosmetics.com/Promotion/c79454c3-f4d9-4ac4-9aaa-77d1d43b8425.jpg"/>
+            <div class="coupon-container">
+                <span class="coupon-code" id="couponCode">FESTIVE20</span>
+                <div class="copy-icon" onclick="copyToClipboard()">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-copy">
+                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                  </svg>
+                </div>
+              </div>
+              
+              <p id="copyMessage" style="display:none; color:green;">Copied!</p>
+        </div>
+        <div>
+            <img
+            class="logo"
+            src="https://images.sugarcosmetics.com/Promotion/08fc6f1c-23c2-4d1b-be3e-8b6ca39aedb3.jpg"/>
+            <div class="coupon-container">
+                <span class="coupon-code" id="couponCode">FESTIVE20</span>
+                <div class="copy-icon" onclick="copyToClipboard()">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-copy">
+                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                  </svg>
+                </div>
+              </div>
+              
+              <p id="copyMessage" style="display:none; color:green;">Copied!</p>
+        </div>
+        <div>
+            <img
+            class="logo"
+            src="https://images.sugarcosmetics.com/Promotion/c79454c3-f4d9-4ac4-9aaa-77d1d43b8425.jpg"/>
+            <div class="coupon-container">
+                <span class="coupon-code" id="couponCode">FESTIVE20</span>
+                <div class="copy-icon" onclick="copyToClipboard()">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-copy">
+                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                  </svg>
+                </div>
+              </div>
+              
+              <p id="copyMessage" style="display:none; color:green;">Copied!</p>
+        </div>
+        <div>
+            <img
+            class="logo"
+            src="https://images.sugarcosmetics.com/Promotion/08fc6f1c-23c2-4d1b-be3e-8b6ca39aedb3.jpg"/>
+            <div class="coupon-container">
+                <span class="coupon-code" id="couponCode">FESTIVE20</span>
+                <div class="copy-icon" onclick="copyToClipboard()">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-copy">
+                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                  </svg>
+                </div>
+              </div>
+              
+              <p id="copyMessage" style="display:none; color:green;">Copied!</p>
+        </div>
+        <div>
+            <img
+            class="logo"
+            src="https://images.sugarcosmetics.com/Promotion/c79454c3-f4d9-4ac4-9aaa-77d1d43b8425.jpg"/>
+            <div class="coupon-container">
+                <span class="coupon-code" id="couponCode">FESTIVE20</span>
+                <div class="copy-icon" onclick="copyToClipboard()">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-copy">
+                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                  </svg>
+                </div>
+              </div>
+              
+              <p id="copyMessage" style="display:none; color:green;">Copied!</p>
+              
+              
+        </div>
+
+    </div>    
+</body>
+</html>
