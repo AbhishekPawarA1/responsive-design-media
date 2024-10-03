@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Layout</title>
+    <style>
+        * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1E1E1E; /* Dark background */
+    color: #FFFFFF; /* White text */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Full viewport height */
+}
+
+.header {
+    background-color: #800080; /* Purple */
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+}
+
+.main-content {
+    flex: 1; /* Take the remaining space */
+    display: flex;
+}
+
+.sidebar {
+    background-color: #00BFFF; /* Light blue */
+    width: 200px; /* Fixed width for sidebar */
+    padding: 20px;
+}
+
+.content {
+    background-color: #FFFFFF; /* White */
+    flex: 1; /* Take the remaining space */
+    padding: 20px;
+    color: #000000; /* Black text */
+}
+
+.footer {
+    background-color: #00BFFF; /* Light blue */
+    padding: 10px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .main-content {
+        flex-direction: column; /* Stack sidebar and content */
+    }
+
+    .sidebar {
+        width: 100%; /* Full width for mobile */
+    }
+    
+    .footer {
+        position: static; /* Make footer stick to the bottom */
+    }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">Header</header>
+        <div class="main-content">
+            <nav class="sidebar">Sidebar</nav>
+            <section class="content">Main Content Area</section>
+        </div>
+        <footer class="footer">Footer</footer>
+    </div>
+</body>
+</html>
