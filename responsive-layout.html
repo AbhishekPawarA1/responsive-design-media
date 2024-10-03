@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive-layout</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+footer {
+    background-color: #1a237e;
+    color: #ffffff;
+    padding: 20px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 20px;
+}
+
+.logo {
+    text-align: center;
+}
+
+.logo img {
+    width: 80px;
+}
+
+.logo p {
+    color: orange;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.footer-links {
+    display: flex;
+}
+
+.footer-section {
+    margin-right: 50px;
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style-type: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-bottom {
+    background-color: #333333;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+}
+
+.country-settings {
+    color: #ffffff;
+}
+
+.footer-bottom-links a {
+    color: #ffffff;
+    margin-left: 15px;
+    text-decoration: none;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        margin: 20px 0;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-container {
+        padding: 0 10px;
+    }
+
+    .footer-links {
+        display: none;
+    }
+
+    .footer-bottom-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-bottom-links a {
+        margin: 10px 0;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer Layout</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <footer>
+        <div class="footer-container">
+            <div class="logo">
+                <img src="logo.png" alt="Logo">
+                <p>LOGO</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-section">
+                    <h3>Shop</h3>
+                    <ul>
+                        <li><a href="#">Gift cards</a></li>
+                        <li><a href="#">Etsy Registry</a></li>
+                        <li><a href="#">Sitemap</a></li>
+                        <li><a href="#">Etsy blog</a></li>
+                        <li><a href="#">Etsy United Kingdom</a></li>
+                        <li><a href="#">Etsy Germany</a></li>
+                        <li><a href="#">Etsy Canada</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Sell</h3>
+                    <ul>
+                        <li><a href="#">Sell on Etsy</a></li>
+                        <li><a href="#">Teams</a></li>
+                        <li><a href="#">Forums</a></li>
+                        <li><a href="#">Affiliates & Creators</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>About</h3>
+                    <ul>
+                        <li><a href="#">Etsy, Inc.</a></li>
+                        <li><a href="#">Policies</a></li>
+                        <li><a href="#">Investors</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Impact</a></li>
+                        <li><a href="#">Legal imprint</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="country-settings">
+                <span>India</span> | <span>English (IN)</span> | <span>₹ (INR)</span>
+            </div>
+            <div class="footer-bottom-links">
+                <a href="#">Terms of Use</a>
+                <a href="#">Privacy</a>
+                <a href="#">Interest-based ads</a>
+                <a href="#">Local Shops</a>
+                <a href="#">Regions</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
+
+</body>
+</html>
